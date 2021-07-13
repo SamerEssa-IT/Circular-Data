@@ -1,0 +1,86 @@
+% !TeX program = xelatex
+% Jan Agatz
+
+\documentclass{scrartcl}
+
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{fontspec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+%Formatierung des Dokuments
+\usepackage[right=3cm]{geometry}
+
+%Kopfzeile
+%Kann an andere Handouts angepasst werden
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{R-Projekt \glqq Circular Data\grqq \\
+		\small Betreuer: Sergio Brenner Miguel} %Betreuer ergaenzt
+\rhead{\small \today \\
+		Agatz, Goldenbaum, Schneider, Sheich Essa} %Datum hinzugefuegt
+
+%--------------------------------------------------------------
+
+\begin{document}
+\section*{Zwischenbericht}
+\noindent\textbf{Was wurde bisher gemacht?}
+\begin{itemize}
+	\item Das entsprechende \href{https://gitlab.com/Jan-Agatz/circulardata}{GitLab-repository} erstellt
+	\item Plot-Funktionen implementiert
+	\begin{itemize}
+			\item Circular plot
+			\item Circular histogram
+			\item Rose diagram
+		  \end{itemize}
+	\item Simulationsfunktion implementiert
+	\item Dichten implementiert
+	\begin{itemize}
+		\item Gleichverteilung auf dem Kreis
+		\item Von-Mises-Verteilung
+	\end{itemize}
+\end{itemize}
+
+%--------------------------------------------------------------
+%--------------------------------------------------------------
+%--------------------------------------------------------------
+
+\noindent\textbf{Wie ist der Zustand aktuell?} \\
+\noindent Aktuell werden die (auf dem Aufgabenblatt beschriebenen) Funktionen anhand der angegebenen Quelle implementiert. \\
+
+%--------------------------------------------------------------
+%--------------------------------------------------------------
+%--------------------------------------------------------------
+
+\noindent\textbf{Was muss noch gemacht werden?}
+\begin{itemize}
+	\item Restliche Funktionen einfügen
+	\begin{itemize}
+		\item Weitere Dichten
+		\item Kerndichteschätzer
+	\end{itemize}
+	
+	\item Formalia einrichten
+	\begin{itemize}
+		\item Beschreibung des Projektes in DESCRIPTION.txt
+		\item Richtige Lizenz verwenden
+		\item Richtige Namenskonventionen verwenden
+		\item Funktionen in korrekten Dateien speichern
+	\end{itemize}
+
+	\item Harmonisierung der Funktionsargumente und -namen, sowie der verwendeten Datentypen
+	\item Tests
+	\item Dokumentation
+	\item Shiny-App
+	\item Vignetten
+\end{itemize}
+
+%--------------------------------------------------------------
+%--------------------------------------------------------------
+%--------------------------------------------------------------
+
+\noindent\textbf{Wie sieht der Plan für die nächsten Wochen aus?} \\
+Weitermachen wie vorher.
+
+\end{document}
